@@ -94,6 +94,7 @@ export default function Home() {
         setSnackBar(true)
         setNotification(data.message)
         handleFormReset()
+        
       }
     }).catch((e) => {
       setSnackBar(true)
@@ -109,6 +110,11 @@ export default function Home() {
     setUploadFile([])
     setStep1FieldArray([...step1fieldList])
     setStep2FieldArray([...step2FieldList])
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+   });
   }
 
   const handleClose = () => {

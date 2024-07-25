@@ -36,16 +36,15 @@ function Step4(props) {
             </FormGroup>
             {termsAndConditionsArr.map((termsAndConditionsData, tcIndex) => {
                 return (
-                     <Box
+                    <Box
                         key={tcIndex}
                         sx={{
                             display: "flex",
                             justifyContent: "flex-start",
-                            alignItems: "center",
                         }}
                     >
-                        <CheckIcon sx={{ margin: "15px" }} />
-                        <p>{termsAndConditionsData}</p>
+                        <CheckIcon sx={{ margin: "0px 15px" }} />
+                        <p style={{ marginBottom: "15px" }}>{termsAndConditionsData}</p>
                     </Box>
                 );
             })}

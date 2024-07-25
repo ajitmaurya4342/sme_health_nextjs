@@ -103,11 +103,10 @@ function Step3(props) {
                             sx={{
                                 display: "flex",
                                 justifyContent: "flex-start",
-                                alignItems: "center",
                             }}
                         >
-                            <CheckIcon sx={{ margin: "15px" }} />
-                            <p>{documentData}</p>
+                            <CheckIcon sx={{ margin: "0px 15px" }} />
+                            <p style={{ marginBottom: "15px" }}>{documentData}</p>
                         </Box>
                     );
                 })}
